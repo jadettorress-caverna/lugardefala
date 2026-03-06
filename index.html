@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiência Editorial - Mentoria Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Bodoni Moda como alternativa Google Font para o estilo Condensed -->
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #F8FAFC;
+            color: #1E293B;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+
+        .serif-editorial {
+            /* Prioridade para Times New Roman Condensed, seguida de Bodoni como reserva */
+            font-family: "Times New Roman MT Condensed", "Times New Roman", "Bodoni Moda", serif;
+            letter-spacing: -0.01em;
+            line-height: 1.1;
+            font-stretch: condensed;
+        }
+
+
+        .sky-gradient {
+            background: radial-gradient(circle at top right, #E0F2FE 0%, #F8FAFC 50%);
+        }
+
+
+        .video-container {
+            aspect-ratio: 9 / 16;
+            max-width: 380px;
+            width: 100%;
+            margin: 0 auto;
+            border-radius: 32px;
+            overflow: hidden;
+            box-shadow: 0 40px 100px -20px rgba(15, 23, 42, 0.1);
+            border: 8px solid white;
+            background: #000;
+        }
+
+
+        .premium-button {
+            transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+            /* Cor verde oficial do WhatsApp */
+            background-color: #25D366;
+            color: #FFFFFF;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+
+        .premium-button:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(37, 211, 102, 0.25);
+            background-color: #20bd5b;
+        }
+
+
+        .tag-minimal {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            color: #94A3B8;
+            padding: 8px 16px;
+            border: 1px solid #E2E8F0;
+            border-radius: 100px;
+            display: inline-block;
+            margin-bottom: 2.5rem;
+        }
+
+
+        .fade-in {
+            animation: fadeIn 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+
+        .italic-accent {
+            font-style: italic;
+            font-weight: 400;
+            color: #0e3eaa;
+        }
+
+
+        @media (max-width: 640px) {
+            .serif-editorial {
+                font-size: 2.1rem;
+            }
+        }
+    </style>
+</head>
+<body class="sky-gradient min-h-screen flex flex-col items-center justify-start py-12 px-6">
+
+
+    <!-- Seção de Cabeçalho / Hero -->
+    <header class="w-full max-w-4xl text-center mb-8 fade-in">
+        <span class="tag-minimal">vídeo aula exclusiva</span>
+       
+        <h1 class="serif-editorial text-5xl md:text-6xl font-normal mb-8 text-slate-900">
+            Encontre seu <br>
+            <span class="italic-accent">lugar de fala</span> <br>
+            no digital
+        </h1>
+
+
+        <p class="text-slate-500 text-lg md:text-xl font-light max-w-2xl mx-auto leading-relaxed mb-4">
+            Assista e entenda como construí meu negócio no digital, sem depender do barulho das redes sociais.
+        </p>
+    </header>
+
+
+    <!-- Área de Vídeo Principal -->
+    <main class="w-full flex flex-col items-center fade-in" style="animation-delay: 0.4s;">
+        <div class="video-container relative group">
+            <!-- VÍDEO ATUALIZADO: Usando o link embed fornecido -->
+            <iframe
+                class="w-full h-full object-cover"
+                src="https://www.youtube.com/embed/8gHTBNtCMzs?si=OnT2rLS8sQmYpZQ9&modestbranding=1&rel=0"
+                title="Apresentação Editorial"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+            <div class="absolute inset-0 pointer-events-none ring-1 ring-inset ring-white/20 rounded-[32px]"></div>
+        </div>
+
+
+        <!-- Botão de Chamada para Ação -->
+        <div class="mt-12 w-full max-w-sm flex flex-col items-center">
+            <a href="https://wa.me/5598985196559"
+               target="_blank"
+               class="premium-button w-full py-6 px-10 rounded-full shadow-lg">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.512-2.96-2.626-.087-.115-.708-.941-.708-1.797 0-.855.448-1.274.607-1.446.159-.171.347-.214.462-.214.116 0 .231.004.332.009.109.004.254-.042.398.305.144.35.491 1.197.535 1.285.044.088.072.19.014.305-.058.115-.087.19-.174.29-.087.1-.183.222-.261.305-.087.087-.179.182-.077.35.102.171.452.746.963 1.201.657.587 1.21.771 1.383.856.173.085.275.071.376-.042.102-.115.434-.506.549-.68.116-.171.232-.144.39-.087.158.058 1.002.473 1.176.56.173.088.289.13.332.202.043.072.043.419-.101.824zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.662 1.435 5.179L2 22l4.958-1.303A9.954 9.954 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
+                </svg>
+                QUERO CONHECER A CAVERNA
+            </a>
+            <p class="mt-6 text-[11px] text-slate-400 uppercase tracking-[0.2em] font-medium text-center">
+                atendimento personalizado no whatsapp
+            </p>
+        </div>
+    </main>
+
+
+    <!-- Rodapé Editorial -->
+    <footer class="mt-24 pb-16 text-center fade-in" style="animation-delay: 0.8s;">
+        <div class="w-12 h-[1px] bg-slate-300 mx-auto mb-10"></div>
+        <p class="text-[13px] text-slate-400 font-light max-w-sm mx-auto leading-relaxed italic">
+            "Sua mensagem não deve ser medida por métricas."
+        </p>
+        <p class="mt-12 text-[10px] text-slate-300 uppercase tracking-widest">
+            © 2026 Caverna das Guerreiras • Direitos Reservados
+        </p>
+    </footer>
+
+
+</body>
+</html>
